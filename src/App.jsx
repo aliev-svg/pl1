@@ -1,19 +1,22 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { increment, decrement } from './features/counterSlice'
+import Header from './components/Header'
+import { useSelector } from 'react-redux'
 
 function App() {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
+  const movies = useSelector((state) => state.movies.movies)
 
   return (
-    <div style={{ padding: '40px' }}>
-      <h1>Redux работает 🎉</h1>
-      <h2>Число: {count}</h2>
+    <div>
+      <Header />
 
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())} style={{ marginLeft: '10px' }}>
-        -
-      </button>
+      <div style={{ padding: '40px' }}>
+        <h1>Список фильмов 🎬</h1>
+
+        <ul>
+          {movies.map((movie, index) => (
+            <li key={index}>{movie}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }
