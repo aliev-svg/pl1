@@ -1,24 +1,37 @@
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
+
+  width: 100%;
   padding: 20px;
-  color: white;
+
+  background-color: #222;
+  color: rgb(38, 191, 246);
+
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;   
 }
 
 .nav a {
-  margin-left: 20px;
-  color: white;
+  color: rgb(44, 227, 251);
   text-decoration: none;
   font-size: 18px;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #61dafb;
 }

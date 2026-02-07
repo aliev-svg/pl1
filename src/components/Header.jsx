@@ -1,4 +1,4 @@
-import './Header.css'
+import "./Header.css";
 
 function Header() {
   return (
@@ -11,7 +11,7 @@ function Header() {
         <a href="/about">О проекте</a>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

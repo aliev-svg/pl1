@@ -1,24 +1,15 @@
-import Header from './components/Header'
-import { useSelector } from 'react-redux'
+import Header from "./components/Header";
 
 function App() {
-  const movies = useSelector((state) => state.movies.movies)
-
   return (
     <div>
       <Header />
 
-      <div style={{ padding: '40px' }}>
-        <h1>Список фильмов 🎬</h1>
-
-        <ul>
-          {movies.map((movie, index) => (
-            <li key={index}>{movie}</li>
-          ))}
-        </ul>
+      <div style={{ padding: "20px" }}>
+        <h1>Главная страница</h1>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
