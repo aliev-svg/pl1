@@ -8,7 +8,7 @@
   padding: 20px;
 
   background-color: #222;
-  color: rgb(38, 191, 246);
+  color: rgb(0, 195, 255);
 
   box-sizing: border-box;
   overflow-x: hidden;
@@ -21,7 +21,7 @@
 }
 
 .nav a {
-  color: rgb(44, 227, 251);
+  color: rgb(33, 194, 235);
   text-decoration: none;
   font-size: 18px;
 }
